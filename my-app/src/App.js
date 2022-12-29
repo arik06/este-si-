@@ -1,9 +1,7 @@
-import './app.css';
-
+import "./app.css";
+import Home from "./pages/Home";
 function App() {
-  return (
-    <h1>hola mundo</h1>
-  );
+  return <Home />
 }
 
 export default App;
