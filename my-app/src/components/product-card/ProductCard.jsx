@@ -1,7 +1,7 @@
 
 
 import React from 'react'
-import './producto-tarjeta.css'
+import './product-card.css'
 const productCard = (props) => {
 
     const {title, imgUrl, price}=props.item
@@ -22,8 +22,12 @@ const productCard = (props) => {
 <h6>{title}</h6>
 
 <div className="d-flex align-items-center justify content-between">
-    <span className="price">Precios: $ <span>{price}</span> </span>
-    <span><i class="ri-shopping-cart-fill "></i></span>
+    <span className="price d-flex align-items-center">
+        {" "}
+        Precios: $ <span>{price}</span>
+         </span>
+    <span className="shopping__icon">
+        <i class="ri-shopping-cart-fill "></i></span>
 </div>
     </div>
 </div>
