@@ -36,11 +36,11 @@ if(filter === 'COFFEE'){
     <Row>
         <Col lg ='12' className='text-center mb-4'> <h3 className="menu__title"> Nuestras promociones!</h3></Col>
         <Col lg='12' className='text-center mb-5'>
-<button className='filter-btn' onClick={() => setFilter('FAST-FOOD')}>Fast food</button>
-<button className='filter-btn active__btn' onClick={() => setFilter('RICE-MENU')}>rice Menu</button>
-<button className='filter-btn' onClick={() => setFilter('PIZZA')}>Pizza</button>
-<button className='filter-btn' onClick={() => setFilter('DESSERT')}>Desserts</button>
-<button className='filter-btn' onClick={() => setFilter('COFFEE')}>Coffe</button>
+<button className={`filter-btn ${filter === 'FAST-FOOD' ? 'active__btn' : ''}`} onClick={() => setFilter('FAST-FOOD')}>Comida rapida</button>
+<button className={`filter-btn ${filter === 'RICE-MENU' ? 'active__btn' : ''}`} onClick={() => setFilter('RICE-MENU')}>Ensaladas </button>
+<button className={`filter-btn ${filter === 'PIZZA' ? 'active__btn' : ''}`} onClick={() => setFilter('PIZZA')}>Pizza</button>
+<button className={`filter-btn ${filter === 'DESSERT' ? 'active__btn' : ''}`} onClick={() => setFilter('DESSERT')}>Postres</button>
+<button className={`filter-btn ${filter === 'COFFEE' ? 'active__btn' : ''}`} onClick={() => setFilter('COFFEE')}>Cafe y te</button>
         </Col>
         { products.map((item)=> (
                 <Col lg='3' key={item.id} className="mb-4">
