@@ -1,0 +1,78 @@
+form {
+    /* Estilo general del formulario */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+  }
+  
+  form label {
+    /* Estilo de los labels del formulario */
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"] {
+    /* Estilo de los input de texto del formulario */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  form input[type="submit"] {
+    /* Estilo del botón de envío del formulario */
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    /* Estilo del botón de envío al hacer hover */
+    background-color: royalblue;
+  }
+
+  form label:nth-of-type(1) {
+    /* Estilo del label del campo de nombre */
+    color: red;
+  }
+  
+  form label:nth-of-type(2) {
+    /* Estilo del label del campo de apellido */
+    color: red;
+  }
+  
+  form label:nth-of-type(3) {
+    /* Estilo del label del campo de horario */
+    color: green;
+  }
+
+  form input[type="text"]:nth-of-type(1) {
+    /* Estilo del input de texto del campo de nombre */
+    color: red;
+  }
+  
+  form input[type="text"]:nth-of-type(2) {
+    /* Estilo del input de texto del campo de apellido */
+    color: red;
+  }
+  
+  form input[type="text"]:nth-of-type(3) {
+    /* Estilo del input de texto del campo de horario */
+    color: green;
+  }
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }

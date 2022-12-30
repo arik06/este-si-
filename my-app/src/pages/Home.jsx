@@ -6,6 +6,8 @@ import HeroSlider from "../components/hero-slider/HeroSlider";
 import PopularMenu from "../components/popular-menu/PopularMenu";
 import ChooseUs from '../components/choose-us/ChooseUs';
 import MenuPack from '../components/menu-pack/MenuPack';
+import Form from '../components/form/form';
+import Footer from '../components/footer/footer';
 
 const Home = () => {
     return (
@@ -15,6 +17,8 @@ const Home = () => {
             <PopularMenu/>
             <ChooseUs/>
             <MenuPack/>
+            <Form/>
+<Footer/>
         </Fragment>
     )
 }
